@@ -13,7 +13,7 @@ jobs:
         uses: sonarsource/sonarcloud-github-action@master
         env:
             GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
-            SONAR_TOKEN: sqa_8a1db691db8c542a6dd3966322376b9b728e12cc
+            SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
               -Dsonar.organization=rekhugopal
